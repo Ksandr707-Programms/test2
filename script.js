@@ -164,7 +164,7 @@ function startGame(){
 }
 function check(){
     ostatok--;
-     ost_time.innerHTML="+ostatok+ seconds left..."
+     ost_time.innerHTML="seconds left:" "+ostatok+" 
      if(ostatok<=0){
         window.open("lose.htm")
         window.close()
