@@ -112,7 +112,7 @@ function shadow_move(event){
                 pole_barrier[steps + 1] = 2;
                 rows=2;
             }else{
-                alert('У вас не хватает изумрудов для постройки!')
+                alert('You must collect the Emerald to build it!')
             }
                       
             break;
