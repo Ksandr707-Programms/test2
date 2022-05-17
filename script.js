@@ -6,11 +6,11 @@ var steps=0;
 var indBlock_old = 5;
 var blockItem = 0;
 var rows=1;
-var n=1; //отображение изумрудов
+var n=1; 
 var many=[ ];
 var ostatok=30;
 for (i = 1; i < 17; i++) {
-    many[i] = 0; //0-пусто,1-изумруд
+    many[i] = 0; 
 }
 for(i=1;i<6;i++){
     indCoin=Math.floor(Math.random()*15+1);
@@ -19,14 +19,14 @@ for(i=1;i<6;i++){
     many[indCoin]=1;
 }
 
-//колечки
+
 for(i=1;i<6;i++){
     idImg=document.getElementById('heart'+i);
     idImg.src="img/ring.png";
 }
 
 
-//ландшафт
+
 pole0_0.src="img/block6.png";
 pole0_16.src="img/block6.png";
 pole_blocks[0] = 5;
@@ -76,7 +76,7 @@ function shadow_move(event){
                 rows = 2;
                 idImg = document.getElementById('pole' + rows + '_' + steps);
                 if(many[steps]==1){ 
-                    //игрок берёт монетку
+                 
                                         idImg1=document.getElementById('coin'+n);
                                         idImg1.src="img/emerald.png";
                                         n++;
@@ -94,7 +94,7 @@ function shadow_move(event){
                     rows = 2;}
                 idImg = document.getElementById('pole' + rows + '_' + steps);
                 if(many[steps]==1){ 
-                    //игрок берёт монетку
+                    //ГЁГЈГ°Г®ГЄ ГЎГҐГ°ВёГІ Г¬Г®Г­ГҐГІГЄГі
                                         idImg1=document.getElementById('coin'+n);
                                         idImg1.src="img/emerald.png";
                                         n++;
@@ -112,7 +112,7 @@ function shadow_move(event){
                 pole_barrier[steps + 1] = 2;
                 rows=2;
             }else{
-                alert('У вас не хватает изумрудов для постройки!')
+                alert('РЈ РІР°СЃ РЅРµ С…РІР°С‚Р°РµС‚ РёР·СѓРјСЂСѓРґРѕРІ РґР»СЏ РїРѕСЃС‚СЂРѕР№РєРё!')
             }
                       
             break;
@@ -164,7 +164,7 @@ function startGame(){
 }
 function check(){
     ostatok--;
-     ost_time.innerHTML="Осталось "+ostatok+" секунд"
+     ost_time.innerHTML="ГЋГ±ГІГ Г«Г®Г±Гј "+ostatok+" Г±ГҐГЄГіГ­Г¤"
      if(ostatok<=0){
         window.open("lose.htm")
         window.close()
